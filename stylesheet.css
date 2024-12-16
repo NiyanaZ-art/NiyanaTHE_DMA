@@ -18,8 +18,10 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 10%;
     background: transparent;
+    justify-content: space-between;
+    z-index: 100;
     color: white;
 }
 
