@@ -50,7 +50,7 @@ body
     justify-content: center;
     align-items: center;
     height: 100vh;
-    backgrounud: url(websitebgnovFinal.jpg) no-repeat;
+    background: url(websitebgnovFinal.jpg) no-repeat;
     background-size:cover;
     /* background-color: #000; */
     color: white;
