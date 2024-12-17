@@ -29,12 +29,11 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
-/*
 .navbar {
     display: flex;
     gap: 20px;
 }
-*/
+
 .navbar a {
     color: #b5c87a;
     text-decoration: none;
