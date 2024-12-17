@@ -110,6 +110,31 @@ body
     margin-top: 20px;
 }
 
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover {
+    background: #98a869;
+    color: #72d26d;
+    box-shadow: 0 0 20px #98a869;
+}
+
 /* About Section */
 .about {
     display: flex;
