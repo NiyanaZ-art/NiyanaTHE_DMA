@@ -566,11 +566,50 @@ section{
     .navbar {
         font-size: 0.9rem;
     }
-
+   /*
     .services-list div {
         max-width: 50%;
+    } */
+
+
+     #services {
+        font-size: 18px; /* Reduce body font size on mobile */
+        line-height: 1.8; /* Adjust line height for readability */
     }
 
+    .sub-title {
+        font-size: 32px; /* Further reduce subtitle font size */
+        text-align: center; /* Ensure the subtitle is centered */
+        padding-bottom: 40px; /* Adjust padding */
+    }
+
+    .services-list {
+        grid-template-columns: 1fr; /* Stack services vertically */
+        gap: 15px; /* Reduce gap between services */
+    }
+
+    .services-list div {
+        padding: 30px; /* Reduce padding inside service cards */
+    }
+
+    .services-list div i {
+        font-size: 35px; /* Adjust icon size */
+    }
+
+    .services-list div h2 {
+        font-size: 20px; /* Reduce heading size */
+    }
+
+    .services-list div a {
+        font-size: 12px; /* Reduce link font size */
+    }
+
+    .read {
+        font-size: 12px; /* Adjust button text size */
+        padding: 8px 16px; /* Reduce button padding */
+    }
+}
+    
     .contact-form input, .contact-form textarea {
         font-size: 0.9rem;
     }
