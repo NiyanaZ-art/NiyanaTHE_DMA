@@ -51,7 +51,7 @@ body
     color: #b5c87a;
 }
 .home {
-    position: relative;
+    position: flex;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
