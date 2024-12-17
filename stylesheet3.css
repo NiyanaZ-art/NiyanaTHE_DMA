@@ -70,7 +70,7 @@ body {
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
-
+/*
 .home-content h3 span {
     color: #ffffff;
 }
@@ -87,7 +87,27 @@ body {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: 0.7s;
+}  */
+
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
 }
+.home-content h3:nth-of-type(2){
+    margin-bottom:30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.home-content h3 span {
+    color: #ffffff;
+}
+
 
 .home-content p {
     font-size: 1.2rem;
