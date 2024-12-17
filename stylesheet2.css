@@ -12,7 +12,7 @@ body {
 }
 
 /* Header */
-.header {
+/* .header {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,6 +23,17 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: transparent;
+    justify-content: space-between;
+    z-index: 100;
+    color: white;
 }
 
 .logo {
