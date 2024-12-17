@@ -573,7 +573,7 @@ section{
 
 
      #services {
-        font-size: 18px; /* Reduce body font size on mobile */
+        font-size: 14px; /* Reduce body font size on mobile */
         line-height: 1.8; /* Adjust line height for readability */
     }
 
@@ -589,7 +589,7 @@ section{
     }
 
     .services-list div {
-        padding: 30px; /* Reduce padding inside service cards */
+        padding: 10px; /* Reduce padding inside service cards */
     }
 
     .services-list div i {
@@ -597,7 +597,7 @@ section{
     }
 
     .services-list div h2 {
-        font-size: 20px; /* Reduce heading size */
+        font-size: 16px; /* Reduce heading size */
     }
 
     .services-list div a {
