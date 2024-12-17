@@ -35,6 +35,11 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
 .navbar a {
     display: inline-block;
     font-size: 25px;
@@ -50,6 +55,66 @@ body {
 
 .navbar a:hover {
     color: #b5c87a;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hamburger Menu for smaller screens */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .navbar {
+        display: none; /* Hide the navbar by default */
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-menu.active {
+        transform: translateX(0);
+    }
+
+    .navbar a {
+        margin-left: 0;
+        font-size: 22px;
+        padding: 15px;
+    }
 }
 
 /* Home Section */
@@ -251,77 +316,70 @@ body {
     .home {
         padding: 70px 5%;
     }
-    .home-content h1 {
-        font-size: 40px;
-    }
+
     .navbar a {
         font-size: 22px;
         margin-left: 20px;
     }
+
     .about {
         grid-template-columns: 1fr;
     }
+
     .about-text h2 {
         font-size: 50px;
     }
+
     .services-list {
         grid-template-columns: 1fr 1fr;
     }
+
     .contact {
         grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar-menu.active {
+        transform: translateX(0);
     }
 }
 
 @media (max-width: 768px) {
-    .home-content h1 {
-        font-size: 35px;
+    .navbar {
+        display: none;
     }
-    .home-content p {
-        font-size: 16px;
-    }
-    .navbar a {
-        font-size: 18px;
-        margin-left: 15px;
-    }
-    .services-list {
-        grid-template-columns: 1fr;
-    }
-    .about {
-        grid-template-columns: 1fr;
-        padding: 0 15px;
-    }
-    .contact-text h2 {
-        font-size: 40px;
-    }
-    .contact-form textarea {
-        width: 100%;
-    }
-}
 
-@media (max-width: 480px) {
-    .home {
-        padding: 50px 10%;
-    }
-    .home-content h1 {
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
         font-size: 30px;
+        color: white;
     }
-    .home-content p {
-        font-size: 14px;
+
+    .navbar-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
     }
+
+    .navbar-menu.active {
+        transform: translateX(0);
+    }
+
     .navbar a {
-        font-size: 16px;
-        margin-left: 10px;
-    }
-    .about-text h2 {
-        font-size: 40px;
-    }
-    .services-list {
-        grid-template-columns: 1fr;
-    }
-    .contact-text h2 {
-        font-size: 30px;
-    }
-    .contact-text h4 {
-        font-size: 16px;
+        margin-left: 0;
+        font-size: 22px;
+        padding: 15px;
     }
 }
