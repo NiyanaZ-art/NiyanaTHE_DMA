@@ -541,6 +541,28 @@ section{
         max-width: 100%;
     }
 
+    .about {
+        padding: 40px 10px; /* Reduce padding for small screens */
+    }
+
+    .about-img img {
+        max-width: 100%; /* Ensure image takes full width */
+    }
+
+    .about-text h2 {
+        font-size: 36px; /* Further reduce font size for h2 */
+    }
+
+    .about-text h4 {
+        font-size: 22px; /* Further reduce font size for h4 */
+    }
+
+    .about-text p {
+        font-size: 16px; /* Smaller font size for paragraphs */
+        margin-bottom: 1.5rem; /* Adjust margin for small screens */
+    }
+
+    
     .navbar {
         font-size: 0.9rem;
     }
